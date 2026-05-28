@@ -1,0 +1,11 @@
+dash
+pandas
+opencv-python
+numpy
+easyocr
+ultralytics
+torch
+torchvision
+scikit-learn
+dash-leaflet
+rapidfuzz
