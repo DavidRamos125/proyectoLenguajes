@@ -11,13 +11,11 @@ from utils.imgTobase64 import toBase64,toImg
 
 
 def register_callbacks(app):
-    
     yolo = YoloService()
     ocr =  OCRService()
     color = ColorService()
     grayScale = GrayScale()
     municipio = MunicipioMatcher()
-
 
     @app.callback(
         [
@@ -119,7 +117,6 @@ def register_callbacks(app):
             f"{colores[1]['color'].upper()} ({colores[1]['percent']:.2f}%)",
 
             grayBase64,
-
             text.upper(),
 
             f"TIPO POR COLOR: {colorType}",
